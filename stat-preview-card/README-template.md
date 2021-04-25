@@ -28,8 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile-view](./mobile-view.png)
-![desktop-view](./desktop-view.png)
+![mobile-view](https://user-images.githubusercontent.com/67115735/116003541-49956f00-a5f6-11eb-93b2-98a7e82473a4.png)
+
+![desktop-view](https://user-images.githubusercontent.com/67115735/116003525-397d8f80-a5f6-11eb-9057-6d01efe063f7.png)
+
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
