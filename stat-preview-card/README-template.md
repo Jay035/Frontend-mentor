@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile-view](https://github.com/Jay035/Frontend-mentor/blob/main/stat-preview-card/images/image-header-mobile.jpg)
+![mobile-view](https://github.com/Jay035/Frontend-mentor/blob/main/stat-preview-card/images/mobile-view.png)
 
 ![desktop-view](desktop-view.png)
 
