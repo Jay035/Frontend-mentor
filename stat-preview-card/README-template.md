@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://jay035.github.io/stat-preview/)
+- Solution URL: [solution URL here](https://your-solution-url.com)
+- Live Site URL: [live site URL here](https://jay035.github.io/stat-preview/)
 
 ## My process
 
