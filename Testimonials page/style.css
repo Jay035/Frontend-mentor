@@ -14,6 +14,7 @@ main{
     line-height:1.4 ;
     margin-bottom: 2em;
     letter-spacing: 1px;
+    box-shadow: 10px 10px 10px #d9dfe6;
 }
 #one{
     background-color: hsl(263, 55%, 52%);
@@ -23,7 +24,7 @@ img{
     float: left;
     margin-right: 1em;
 }
-img#one{
+img#img-one{
     border:2px solid #A775F1;
 }
 h3{
