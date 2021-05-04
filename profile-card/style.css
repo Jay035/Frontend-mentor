@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+body{
+ background-color: hsl(185, 75%, 39%);
+ padding:100px 0;
+ font-family: 'Kumbh Sans',sans-serif;
+}
+svg.top{
+  position: absolute;
+  top:-43em;
+  left: -44em;
+}
+@media screen and (min-width:1000px){
+    svg.top{
+        position: absolute;
+        top: -30em;
+        left: -30em;
+        width: 1500px!important;
+        height: 1000px!important;
+      }
+      .body{
+        width: 20em!important;
+      }
+}
+@media screen and (max-width:999px){
+    .body{
+        width: 18em!important;
+    }
+    .pattern{
+        width:18em!important;
+      }
+}
+.body{
+  background-color: #fff;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto 2em;
+  width: 17.5em;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.pattern{
+  width:20em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.personal{
+  border-radius: 70%; 
+  border: 10px solid #fff;
+  position: absolute;
+  top:27%;
+  margin:0 auto;
+}
+.name{
+    margin-top: 4em;
+}
+#figures{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 35px;
+}
+#figures h3 {
+    margin-bottom: -.5em;
+}
+h2{
+    margin-bottom: 0;
+}
+h2,h3{
+  color: hsl(229, 23%, 23%);
+  text-align:center;
+  font-weight: 700;
+}
+span{
+    color:hsl(227, 10%, 46%);
+}
+#london,p{
+  color:hsl(227, 10%, 46%);
+  text-align: center;
+  font-weight: 400;
+}
+svg.bottom{
+    position: absolute;
+    
+  }
+  
+  @media screen and (min-width:350px) and (max-width:1150px){
+    svg.bottom{
+        position: absolute;
+        top: 90.5%;
+        left: 10%;
+      }
+}
+@media screen and (min-width:1200px){
+    svg.bottom{
+        position: absolute;
+        top: 71%;
+        left: 63%;
+        width: 500px!important;
+        height: 190px!important;
+      }
+}
+ 
+
+.attribution { 
+  font-size: 15px; 
+  text-align: center; 
+  color: #fff;
+  line-height: 1.5;
+}
+ .attribution a { 
+   color: hsl(228, 45%, 44%); 
+   cursor: pointer;
+ }
