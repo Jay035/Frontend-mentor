@@ -44,13 +44,26 @@ body{
         margin-top: 0!important;
     }
 }
-@media (min-width:322px) and (max-width:359px){
+@media (min-width:322px) and (max-width:329px){
     .background{
         position: absolute;
-        top: 12.5%;
+        top: 13.8%;
         left:auto ;
         right:auto;
-        width: 86%;
+        width: 85%;
+        height: 17.7vh;
+    }
+    .attribution {
+        margin-top: 10em;
+    }
+}
+@media (min-width:330px) and (max-width:349px){
+    .background{
+        position: absolute;
+        top: 13.8%;
+        left:auto ;
+        right:auto;
+        width: 85.5%;
         height: 17.7vh;
     }
     .attribution {
@@ -58,11 +71,20 @@ body{
     }
 }
 
-
-@media (min-width:360px) and (max-width:380px){
+@media (min-width:350px) and (max-width:360px){
     .background{
         position: absolute;
-        top: 13.6%;
+        top: 13.9%;
+        left:auto ;
+        right:auto;
+        width: 86.5%;
+        height: 17.7vh;
+    }
+}
+@media (min-width:361px) and (max-width:380px){
+    .background{
+        position: absolute;
+        top: 13.9%;
         left:auto ;
         right:auto;
         width: 87%;
@@ -82,7 +104,7 @@ body{
 @media (min-width:410px) and (max-width:435px){
     .background{
         position: absolute;
-        top: 13.6%;
+        top: 10.7%;
         left:auto ;
         right:auto;
         width: 88.6%;
@@ -125,14 +147,28 @@ body{
             background-position: right top;
         }
     }
-    @media (min-width:498px) and (max-width:547px){
+    @media (min-width:498px) and (max-width:530px){
         .background{
             position: absolute;
-            top: 12.8%;
+            top: 13.6%;
+            left:auto ;
+            right:auto;
+            width: 90.5%;
+            height: 19vh;
+        }
+        .mobile{
+            background-position: right top;
+            height: 36vh;
+        }
+    }
+    @media (min-width:531px) and (max-width:547px){
+        .background{
+            position: absolute;
+            top: 11%;
             left:auto ;
             right:auto;
             width: 91%;
-            height: 19vh;
+            height: 22vh;
         }
         .mobile{
             background-position: right top;
@@ -142,7 +178,7 @@ body{
     @media (min-width:548px) and (max-width:594px){
         .background{
             position: absolute;
-            top: 12.8%;
+            top: 13.6%;
             left:auto ;
             right:auto;
             width: 91.5%;
@@ -159,7 +195,7 @@ body{
         }
         .background{
             position: absolute;
-            top: 23.5%;
+            top: 25.9%;
             left:auto ;
             right:auto;
             min-width: 92%;
@@ -180,7 +216,7 @@ body{
         }
         .background{
             position: absolute;
-            top: 18.8%;
+            top: 20.7%;
             left:auto ;
             right:auto;
             width: 92.5%;
@@ -201,7 +237,7 @@ body{
         }
         .background{
             position: absolute;
-            top: 20.5%;
+            top: 22.5%;
             left:auto ;
             right:auto;
             width: 93%;
@@ -219,10 +255,10 @@ body{
     @media (min-width:713px) and (max-width:767px){
         .background{
             position: absolute;
-            top: 7.8%;
+            top: 13.6%;
             left:auto ;
             right:auto;
-            width: 93.6%;
+            width: 93.5%;
             height: 26.7vh;
         }
         .mobile{
@@ -335,7 +371,7 @@ p{
         left:25em ;
         right:auto;
         width: 37.3%;
-        height: 67.4%;
+        height: 42%;
     }
 }
 @media (min-width:775px) and (max-width:785px){
