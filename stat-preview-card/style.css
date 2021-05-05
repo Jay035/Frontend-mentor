@@ -658,11 +658,21 @@ p{
         padding: 25px 0;
     }
 } 
-@media (min-width:1366px) and (max-width:1410px){
+@media (min-width:1366px) and (max-width:1399px){
     .background{
         position: absolute;
         top: 10.6em;
         left:41.5em ;
+        right:auto;
+        width: 41%;
+        height: 50.3%;
+    }
+} 
+@media (min-width:1400px) and (max-width:1499px){
+    .background{
+        position: absolute;
+        top: 10.6em;
+        left:43em ;
         right:auto;
         width: 41%;
         height: 50.3%;
