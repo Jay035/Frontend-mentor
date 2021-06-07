@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Calculator app</title>
+    <!-- <link rel="stylesheet" href="dark.css" media="(prefers-color"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="body">
+    <div class="calculator">
+        <div class="calculator-top">
+            <h2 class="white">calc</h2>
+
+            <div id="toggle-switch">
+                <span class="white">Theme</span>
+            <div class="top-right">
+                <div class="right" id="numbers">
+                <p class="white">&nbsp; 1 &nbsp;  2 &nbsp; 3</p>
+                </div>
+                <div class="right" id="toggle-section">
+                    <input type="radio" id="toggleOne" class="toggleOne" name="theme" />
+                    <label for="toggleOne">1</label>
+
+                    <input type="radio" id="toggleTwo" class="toggleTwo" name="theme" />
+                    <label for="toggleTwo">2</label>
+
+                    <input type="radio" id="toggleThree" class="toggleThree" name="theme" />
+                    <label for="toggleThree">3</label>
+
+                    <div class="selector">&nbsp;</div>
+                 </div>
+            </div>
+            </div>
+        </div>
+           <div id="display">
+               <div class="display-1">0</div>               
+               <div class="display-2">0</div>
+               <div class="temp-result">0</div>               
+           </div>
+        
+            <div id="btns">
+                <div class="button number">7</div>
+                <div class="button number">8</div>
+                <div class="button number">9</div>
+                <div class="button last-entity-clear" >DEL</div>
+                <div class="button number">4</div>
+                <div class="button number">5</div>
+                <div class="button number">6</div>
+                <div class="button operation">+</div>
+                <div class="button number">1</div>
+                <div class="button number">2</div>
+                <div class="button number">3</div>
+                <div class="button operation">-</div>
+                <div class="button number dot">.</div>
+                <div class="button">0</div>
+                <div class="button operation">/</div>
+                <div class="button operation">x</div>
+                <div class="button all-clear">Reset</div>
+                <div id="equal" class="button equal">=</div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js" defer></script>
+</body>
+</html>
