@@ -1,6 +1,7 @@
 const firstDisplay = document.querySelector('.display-1');
 const secondDisplay = document.querySelector('.display-2');
 const temporaryDisplay = document.querySelector('.temp-result');
+const zero = document.querySelector('.zero');
 const numbers = document.querySelectorAll('.number');
 const operations = document.querySelectorAll('.operation');
 const equal = document.querySelector('.equal');
@@ -59,10 +60,13 @@ numbers.forEach(number => {
         else if(e.target.innerText === '.' && dot){
             return;
         }
+        
         displayTwo += e.target.innerText;
         secondDisplay.innerText = displayTwo;
     })
 })
+
+
 
 // <<<<<<< HEAD
 
@@ -119,7 +123,7 @@ equal.addEventListener('click', (e)=>{
     clearVal();
     secondDisplay.innerText = result;
     temporaryDisplay.innerText = ''
-    displayTwo = result;
+    // displayTwo = result;
     firstDisplay.innerText = '';
     displayOne = ''
 
