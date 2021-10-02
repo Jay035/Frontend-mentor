@@ -97,7 +97,7 @@ operations.forEach(operation =>{
 function clearVal(){
     secondDisplay.innerText = ' '
     displayTwo = ' '
-    console.log(result)
+    // console.log(result)
     temporaryDisplay.innerText = result;
 }
 
