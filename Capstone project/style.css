@@ -1,0 +1,130 @@
+/* import link for google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* universal selector styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: url(./images/pattern-background-desktop.svg);
+  background-color: var(--pale-blue);
+  background-repeat: no-repeat;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  color: var(--desaturated-blue);
+}
+
+main {
+  text-align: center;
+  background: #fff;
+  width: 370px;
+  border-radius: 10px;
+}
+
+figure img {
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#pricing-section {
+  padding: 30px 25px;
+  line-height: 1.45;
+}
+
+#pricing-section p.info{
+  margin: .8em 0;
+  font-size: 16px;
+  
+}
+
+.plan-box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-box-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.plan-box-left div {
+  margin-left: 20px;
+}
+
+.plan-box-left div h3 {
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-box-left div p {
+  font-size: 14px;
+  color: var(--desaturated-blue);
+}
+
+.plan-box a {
+  font-weight: 700;
+  color: var(--bright-blue);
+  transition: color 0.3s ease;
+}
+
+.plan-box a:hover {
+  text-decoration: none;
+  color: #746cf1;
+}
+
+.proceed {
+  padding: 25px 0;
+}
+
+.proceed a {
+  text-decoration: none;
+  padding: 10px 50px;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow:2px 2px 7px 3px rgb(158, 158, 158);
+}
+
+
+/* cancel order button */
+a#cancel{
+  text-decoration: none;
+  color: var(--desaturated-blue);
+  font-weight: 600;
+}
+
+a#cancel:hover{
+  color: hsl(223, 47%, 23%);
+}
+
+/* media query styling here */
+@media (max-width: 375px) {
+  body {
+    background: url(./images/pattern-background-mobile.svg);
+  }
+}

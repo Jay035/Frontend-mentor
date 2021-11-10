@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    background: hsl(235, 16%, 14%) no-repeat;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+body::after{
+    content: '';
+    background-image: url('./images/bg-stars.svg');
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* container */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-inline: auto;
+    padding: 8rem 0 0 ;
+    letter-spacing: 1.6px;
+}
+
+.container h1{
+    font-size: 1.875rem;
+    margin-bottom: 1.5em;
+}
+
+/* countdown */
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.countdown div{
+    margin: 1em .5em;
+}
+
+.countdown h3{
+    padding: 1rem .5rem;
+    background-color: hsl(236, 21%, 26%);
+    color: hsl(345, 95%, 68%);
+    border-radius: 5px;
+    font-size: 2.5rem;
+}
+
+.countdown p{
+    color: hsl(237, 18%, 59%);
+    letter-spacing: 1.6px;
+    margin-top: 1rem;
+}
+
+.socials, .attribution{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+/* social media */
+.socials{
+    bottom: 3em;
+}
+
+.socials ul{
+    display: flex;
+}
+
+/* social media icons */
+.socials ul li{
+    margin-inline: 20px;
+    cursor: pointer;
+}
+
+.socials ul li img:hover{
+    filter: drop-shadow(0px 4px hsl(345, 95%, 68%));
+    -webkit-filter: drop-shadow(0px 4px hsl(345, 95%, 68%));
+}
+
+/* footer-img */
+.hills{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.attribution { 
+    bottom: 1em;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover { 
+    color: hsl(345, 95%, 68%); 
+}
+
+@media (min-width:768px){
+    .container{
+        padding: 10rem 0 0;
+    }
+    .countdown div{
+        margin: 1em;
+    }
+    .countdown h3{
+        font-size: 3rem;
+    }
+    .socials{
+        bottom: 5em;
+    }
+    .attribution {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1440px){
+    .body::after, 
+    .hills img{
+        width: 1600px;
+    }
+    .socials{
+        bottom: 5em;
+    }
+}
+
+@media (min-width:160px){
+    .body::after, 
+    .hills img{
+        width: 1920px;
+    }
+}
