@@ -3,6 +3,9 @@ Contains all tasks from frontendmentor.io
 
 # LIVE LINKS
 
+Order-Summary-Component
+https://jay035.github.io/Order-Summary-Component/
+
 launch-countdown-timer-main
 https://jay035.github.io/launch-countdown-timer-main/
 
