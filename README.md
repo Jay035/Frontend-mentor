@@ -12,9 +12,6 @@ https://jay035.github.io/launch-countdown-timer-main/
 social-media-dashboard-with-theme-switcher-master
 https://jay035.github.io/social-media-dashboard-with-theme-switcher-master/
 
-AltSignals
-https://jay035.github.io/AltSignals/
-
 Calculator
 https://jay035.github.io/Calculator/
 
