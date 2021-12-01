@@ -1,6 +1,12 @@
+// page loading animation 
+window.addEventListener("load", function(){
+    document.querySelector('.loader').style.display = 'none';
+    document.querySelector('.main').style.display = 'block';
+});
+
 const countdown = () => {
     // launch time 
-    const endDate = new Date("Dec 31, 2021 00:00:00").getTime();
+    const endDate = new Date("Jan 01, 2022 00:00:00").getTime();
     // present date 
     const now = new Date().getTime();
     const diff = endDate - now;

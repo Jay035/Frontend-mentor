@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: 'Red Hat Text', sans-serif;
 }
 
@@ -12,7 +11,15 @@ body{
     background: hsl(235, 16%, 14%) no-repeat;
     text-align: center;
     overflow-x: hidden;
+    line-height: 1.2;
+}
 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
 }
 
 body::after{
@@ -25,7 +32,76 @@ body::after{
     left: 0;
 }
 
+/* preloader */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #211d2b;
+    animation: animate 10s linear infinite ;
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#preloader{
+    position: relative;
+    width: 120px;
+    height:120px;
+}
+
+#preloader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+
+#preloader span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background: #30243a;
+    box-shadow: 0 0 10px #302,
+                0 0 20px #302,
+                0 0 40px #302,
+                0 0 60px #302,
+                0 0 80px #302,
+                0 0 100px #302;
+    animation: spin 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes spin{
+    0%{
+        transform: scale(1);
+    }
+    80%,100%{
+        transform: scale(0);
+    }
+}
+
+
 /* container */
+.main{
+    display: none;
+}
+.container *{
+    overflow-x: hidden;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -76,7 +152,7 @@ body::after{
 
 /* social media */
 .socials{
-    bottom: 3em;
+    bottom: 4em;
 }
 
 .socials ul{
