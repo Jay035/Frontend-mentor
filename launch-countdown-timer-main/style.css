@@ -129,7 +129,7 @@ section{
     margin: 1em .5em;
 }
 
-.countdown h3{
+.countdown div p:nth-child(1){
     padding: 1rem .5rem;
     background-color: hsl(236, 21%, 26%);
     color: hsl(345, 95%, 68%);
@@ -198,7 +198,7 @@ section{
     .countdown div{
         margin: 1em;
     }
-    .countdown h3{
+    .countdown div p:nth-child(1){
         font-size: 3rem;
     }
     .socials{
