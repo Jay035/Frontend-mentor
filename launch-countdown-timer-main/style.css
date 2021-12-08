@@ -10,7 +10,7 @@ body{
     color: hsl(0, 0%, 100%);
     background: hsl(235, 16%, 14%) no-repeat;
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
     line-height: 1.2;
 }
 
