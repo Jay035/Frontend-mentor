@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="font-paragraph box-border">
+  <header>
+    <!-- mobile -->
+    <div class="relative w-full h-cover bg-mobile-header md:bg-desktop-header bg-cover bg-center "></div>
+    <!-- desktop -->
+    <!-- <div class="relative bg-desktop-header w-full h-cover bg-cover bg-center hidden md:block"></div> -->
+    <nav class="absolute top-0 py-4 md:py-1 w-full">
+      <div class="w-96 mx-auto md:w-11/12 items-center md:flex justify-between">
+        <div class="flex justify-between ">
+          <h2 class="text-white font-bold text-2xl font-header">sunnyside</h2>
+          <!-- hamburger icon  -->
+          <a href="#">
+            <img class="w-8 md:hidden" src="./images/icon-hamburger.svg" alt="icon-hamburger">
+          </a>
+        </div>
+
+          <!-- menu  -->
+          <div class="text-center bg-white w-72 mx-auto hidden relative top-8 py-4 md:bg-transparent md:top-0 md:flex md:justify-between md:w-96 md:mx-0 lg:w-1/3">
+            <ul class="text-grayish-blue items-center hidden md:ml-0 md:block md:text-white ">
+              <li class="mb-4 md:mb-0 md:py-2 md:float-left md:px-4">
+                <a href="">About</a>
+              </li>
+              <li class="mb-4 md:mb-0 md:py-2 md:float-left md:px-4">
+                <a href="">Services</a>
+              </li>
+              <li class="mb-4 md:mb-0 md:py-2 md:float-left md:px-4">
+                <a href="">Projects</a>
+              </li> 
+              <!-- contact link  -->
+              <button class="p-2 bg-bright-yellow md:bg-white text-desaturated-blue rounded-full hover:bg-light-blue hover:text-white">
+                <li class="md:float-left md:px-2 lg:px-4 transition delay-75 uppercase font-semibold">
+                  <a href="">Contact</a>
+                </li>
+              </button>
+              
+            </ul>
+          </div> 
+      </div>
+    </nav>
+  </header>
+
+  <main class="leading-6">
+    <div class="absolute top-40 w-full text-center">
+      <div class="w-80 mx-auto md:w-11/12">
+        <h1 class="text-white text-5xl tracking-wider uppercase font-header">We are creatives</h1>
+        <img class="w-min mx-auto mt-16" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2">
+      <!-- <div class="bg-mobile-transform md:bg-desktop-transform bg-no-repeat bg-contain bg-origin-padding"> -->
+        <img class="md:hidden" src="./images/mobile/image-transform.jpg" alt="image-transform">
+        <img class="hidden md:block" src="./images/desktop/image-transform.jpg" alt="image-transform">
+      <!-- </div> -->
+      <div class="text-center flex flex-col justify-center md:text-left font-bold py-16 px-10 w-96 lg:w-4/5 xl:py-0 mx-auto h-auto min-h-full text-desaturated-blue md:order-first">
+        <h2 class="text-3xl mb-6 font-black font-header">Transform your brand</h2>
+        <p class="text-base text-dark-grayish-blue font-semibold">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <button class="font-black font-header mt-10 text-xl md:text-left relative z-50 after:z-0 after:absolute after:mt-4 after:rounded-lg after:left-14 md:after:-left-2 after:px-24 after:py-2 after:bg-bright-yellow/25 hover:after:bg-bright-yellow/75">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2">
+      <!-- <div class="bg-mobile-stand-out md:bg-desktop-stand-out bg-no-repeat bg-contain bg-origin-padding"> -->
+        <img class="md:hidden" src="./images/mobile/image-stand-out.jpg" alt="image-stand-out">
+        <img class="hidden md:block" src="./images/desktop/image-stand-out.jpg" alt="image-stand-out">
+      <!-- </div> -->
+      <div class="text-center flex flex-col justify-center md:text-left font-bold py-16 px-10 w-96 lg:w-4/5 xl:py-0 h-auto min-h-full mx-auto text-desaturated-blue">
+        <h2 class="text-3xl mb-6 font-black font-header">Stand out to the right audience</h2>
+        <p class="text-base text-dark-grayish-blue font-semibold">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+        <button class="font-black font-header mt-10 text-xl md:text-left relative z-50 after:z-0 after:absolute after:mt-4 after:rounded-lg after:left-14 md:after:-left-2 after:px-24 after:py-2 after:bg-soft-red/25 hover:after:bg-soft-red/75">LEARN MORE</button>
+      </div>
+    </div>
+
+    <section class="grid md:grid-cols-2 h-5/6">
+      <div class="bg-mobile-graphic-design md:bg-desktop-graphic-design bg-no-repeat bg-cover bg-top">
+        <div class="text-desaturated-cyan text-center mt-96 mb-12 w-4/5 md:w-3/5 m-auto">
+          <h2 class="text-2xl font-black font-header pt-20 mb-4">Graphic design</h2>
+          <p class="font-semibold">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </div>
+      <div class="bg-mobile-photography md:bg-desktop-photography bg-no-repeat bg-cover bg-top">
+        <div class="text-dark-blue text-center mt-96 mb-12 w-4/5 md:w-3/5 m-auto">
+          <h2 class="text-2xl font-black font-header pt-20 mb-4">Photography</h2>
+          <p class="font-semibold">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <div class="bg-gray-50 py-8">
+      <div class="text-center grid w-11/12 md:w-4/5 mx-auto items-center font-bold">
+        <p class="text-grayish-blue font-bold text-xl">CLIENT TESTIMONIALS</p>
+        <div class="grid md:grid-cols-3 md:gap-x-4">
+
+          <div class="mb-8">
+            <img src="./images/image-emily.jpg" alt="image-emily" class="my-8 w-20 mx-auto rounded-full">
+            <div class="text-darker-grayish-blue">
+              <p class="">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+              <div class="mt-4">
+                <!-- name of testifier -->
+                <h1 class="text-desaturated-blue text-2xl py-2">Emily R.</h1>
+                <!-- occupation -->
+                <p class="text-grayish-blue">Marketing Director</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-8">
+            <img src="./images/image-thomas.jpg" alt="image-thomas" class="my-8 w-20 mx-auto rounded-full">
+            <div class="text-darker-grayish-blue">
+              <p class="">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+              <div class="mt-4">
+                <!-- name of testifier -->
+                <h1 class="text-desaturated-blue text-2xl py-2">Thomas S.</h1>
+                <!-- occupation -->
+                <p class="text-grayish-blue">Chief Operating Officer</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-10">
+            <img src="./images/image-jennie.jpg" alt="image-jennie" class="my-8 w-20 mx-auto rounded-full">
+            <div class="text-darker-grayish-blue">
+              <p class="bold">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+              <div class="mt-4">
+                <!-- name of testifier -->
+                <h1 class="text-desaturated-blue text-2xl py-2">Jennie F.</h1>
+                <!-- occupation -->
+                <p class="text-grayish-blue">Business Owner</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="grid grid-cols-2 md:grid-cols-4 ">
+      <!-- milkbottles -->
+      <!-- <div class="bg-mobile-gallery-milkbottles md:bg-desktop-gallery-milkbottles h-40 w-8"></div> -->
+      <!-- mobile -->
+      <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles" class="md:hidden">
+      <!-- desktop  -->
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles" class="hidden md:block">
+      <!-- Orange -->
+      <!-- mobile -->
+      <img src="./images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange" class="md:hidden">
+      <!-- desktop -->
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange" class="hidden md:block">
+      <!-- cone -->
+      <!-- mobile -->
+      <img src="./images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone" class="md:hidden">
+      <!-- desktop -->
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone" class="hidden md:block">
+      <!-- sugar cubes -->
+      <!-- mobile -->
+      <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes" class="md:hidden">
+      <!-- desktop -->
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugar-cubes" class="hidden md:block">
+    </div>
+    <div class="bg-footer-body pt-16 pb-8 text-center">
+      <div>
+        <h1 class="text-desaturated-cyan text-4xl font-bold mb-12">sunnyside</h1>
+        <!-- social-media-links -->
+        <section class="">
+          <div class="text-moderate-cyan flex justify-between w-80 mx-auto font-bold">
+            <a href="#" class="text-xl transition duration-700 ease-in-out hover:text-white">About</a>
+            <a href="#" class="text-xl transition duration-700 ease-in-out hover:text-white">Services</a>
+            <a href="#" class="text-xl transition duration-700 ease-in-out hover:text-white">Projects</a>
+          </div>
+          
+          <div class="flex justify-between mt-24 mb-10 w-48 mx-auto">
+            <!-- facebook icon -->
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="facebook-icon" class="w-6 filter hover:contrast-200">
+            </a>
+            <!-- instagram icon -->
+            <a href="#">
+              <img src="./images/icon-instagram.svg" alt="instagram-icon" class="w-6 filter hover:contrast-200">
+            </a>
+            <!-- twitter icon -->
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="twitter-icon" class="w-6 filter hover:contrast-200">
+            </a>
+            <!-- pinterest icon -->
+            <a href="#">
+              <img src="./images/icon-pinterest.svg" alt="pinterest-icon" class="w-6">
+            </a>
+          </div>
+        </section>
+      </div>
+      <!-- attribution -->
+      <div class="font-medium text-desaturated-cyan">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="font-bold transition duration-700 ease-in-out hover:text-white">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/Jay035" target="_blank" class="font-bold transition duration-700 ease-in-out hover:text-white">CodexJay</a>.
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="./app.js"></script>
+  
+</body>
+</html>
