@@ -100,7 +100,7 @@ section{
     display: none;
 }
 .container *{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .container{
     display: flex;
