@@ -44,22 +44,80 @@
       <h1>We're launching soon</h1>
 
       <div class="countdown">
-        <div>
-          <p id="days">30</p>
+
+        <!-- days -->
+        <div class="days">
+          <div class="flip">
+            <!-- seconds last digit -->
+            <input type="hidden" />
+            <!-- for tracking d value changes -->
+            <div class="flip-display">
+              <div class="flip-display-top" data-group="days"></div>
+              <div class="flip-display-bottom" data-group="days"></div>
+            </div>
+            <!-- FLIPPER -->
+            <div class="flipper">
+              <div class="flipper-top" data-group="days"></div>
+              <div class="flipper-bottom" data-group="days"></div>
+            </div>
+          </div>
           <p>Days</p>
         </div>
-
-        <div>
-          <p id="hours">23</p>
+        
+        <!-- hours -->
+        <div class="hours">
+          <div class="flip">
+            <!-- seconds last digit -->
+            <input type="hidden" />
+            <!-- for tracking d value changes -->
+            <div class="flip-display">
+              <div class="flip-display-top" data-group="hours"></div>
+              <div class="flip-display-bottom" data-group="hours"></div>
+            </div>
+            <!-- FLIPPER -->
+            <div class="flipper">
+              <div class="flipper-top" data-group="hours"></div>
+              <div class="flipper-bottom" data-group="hours"></div>
+            </div>
+          </div>
           <p>Hours</p>
         </div>
 
-        <div>
-          <p id="minutes">59</p>
+        <!-- minutes -->
+        <div class="minutes">
+          <div class="flip">
+            <!-- seconds last digit -->
+            <input type="hidden" />
+            <!-- for tracking d value changes -->
+            <div class="flip-display">
+              <div class="flip-display-top" data-group="minutes"></div>
+              <div class="flip-display-bottom" data-group="minutes"></div>
+            </div>
+            <!-- FLIPPER -->
+            <div class="flipper">
+              <div class="flipper-top" data-group="minutes"></div>
+              <div class="flipper-bottom" data-group="minutes"></div>
+            </div>
+          </div>
           <p>Minutes</p>
         </div>
-        <div>
-          <p id="seconds">59</p>
+
+        <!-- seconds -->
+        <div class="seconds">
+          <div class="flip play">
+            <!-- seconds last digit -->
+            <input type="hidden" />
+            <!-- for tracking d value changes -->
+            <div class="flip-display">
+              <div class="flip-display-top" data-group="seconds"></div>
+              <div class="flip-display-bottom" data-group="seconds"></div>
+            </div>
+            <!-- FLIPPER -->
+            <div class="flipper">
+              <div class="flipper-top" data-group="seconds"></div>
+              <div class="flipper-bottom" data-group="seconds"></div>
+            </div>
+          </div>
           <p>Seconds</p>
         </div>
       </div>

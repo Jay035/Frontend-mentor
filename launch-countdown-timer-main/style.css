@@ -1,3 +1,17 @@
+/* variables */
+:root{
+    --flip-height: 80px;
+    --flip-width: calc(var(--flip-height) * 0.8);
+    --line-height: calc(var(--flip-height) * 0.5);
+    --animation-time: 1s;
+    --animation-ease: linear;
+    --perspective: 200px;
+    --textColor: hsl(237, 18%, 59%);
+    --countdown-text: hsl(345, 95%, 68%);
+    --body: hsl(235, 16%, 14%);
+    --countdown-bg: hsl(236, 21%, 26%);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +22,7 @@
 body{
     text-transform: uppercase;
     color: hsl(0, 0%, 100%);
-    background: hsl(235, 16%, 14%) no-repeat;
+    background: var(--body) no-repeat;
     text-align: center;
     overflow: hidden;
     line-height: 1.2;
@@ -99,15 +113,13 @@ section{
 .main{
     display: none;
 }
-.container *{
-    overflow-x: hidden;
-}
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: min(90%, 1000px);
     margin-inline: auto;
     padding: 8rem 0 0 ;
     letter-spacing: 1.6px;
@@ -125,22 +137,130 @@ section{
     justify-content: space-around;
 }
 
-.countdown div{
+/* .countdown div{
     margin: 1em .5em;
-}
+} */
 
-.countdown div p:nth-child(1){
-    padding: 1rem .5rem;
-    background-color: hsl(236, 21%, 26%);
-    color: hsl(345, 95%, 68%);
-    border-radius: 5px;
-    font-size: 2.5rem;
-}
 
 .countdown p{
-    color: hsl(237, 18%, 59%);
+    color: var(--textColor);
     letter-spacing: 1.6px;
     margin-top: 1rem;
+}
+
+.flip{
+    height: var(--flip-height);
+    width: var(--flip-width);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: calc(var(--flip-height) * 0.5); 
+    /* half d size of d flip height */
+    position: relative;
+    margin: 0 12px;
+    overflow: hidden;
+    background-color: var(--countdown-bg);
+}
+
+.flip-display{
+    height: var(--flip-height);
+    width: var(--flip-width);
+    display: flex;
+    flex-direction: column;
+}
+
+.flip-display-top,
+.flip-display-bottom{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    color: var(--countdown-text);
+    height: calc(var(--flip-height) * 0.5); /* half d size of d flip height */
+    line-height: calc(var(--line-height) * var(--i)); /* i property is defined later */
+}
+
+.flip-display-top{
+    /* based on --i, we will align d line height */
+    --i: 2;
+}
+
+.flip-display-bottom{
+    --i: -2;
+}
+
+.flipper{
+    /* this is positioned on top of d flip display so that d are stacked upon one another */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: var(--flip-height);
+    width: var(--flip-width);
+    perspective: var(--perspective);
+}
+
+.flipper-top,
+.flipper-bottom{
+    position: absolute;
+    left: -10%;  /*using negative % for better alignment */
+    right: -10%;
+    margin: auto;
+    text-align: center;
+    /* set d height of d element to half d height of d flipper */
+    height: calc(var(--flip-height) * 0.5);
+    line-height: calc(var(--line-height) * var(--i));
+    overflow: hidden;
+    background-color: hsl(236, 22%, 14%);
+    /* background-color: hsl(237, 20%, 20%); */
+    color: var(--countdown-text);
+}
+
+/* now, we need to align d flipper line height to match with d flip display line height, by adding bg colors */
+.flipper-top{
+    --i: 2;
+    top: 0;
+    transform: rotateX(0deg);
+    transform-origin: bottom;
+}
+
+.flipper-bottom{
+    --i: -2;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    bottom: 0;
+}
+
+.flip.play .flipper-top{
+    /* animate d flipper top */
+    animation: flipperTopAnimation var(--animation-ease) var(--animation-time) infinite;
+}
+
+.flip.play .flipper-bottom{
+    /* animate d flipper bottom */
+    animation: flipperBottomAnimation var(--animation-ease) var(--animation-time) infinite;
+}
+
+@keyframes flipperTopAnimation {
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%,
+    100%{
+        transform: rotateX(-90deg);
+    }
+}
+
+@keyframes flipperBottomAnimation {
+    0%,
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
 }
 
 .socials, .attribution{
@@ -195,15 +315,21 @@ section{
     .container{
         padding: 10rem 0 0;
     }
-    .countdown div{
-        margin: 1em;
+
+    .flip{
+        width: calc(var(--flip-width) * 1.2);
+        font-size: calc(var(--flip-height) * 0.6); 
     }
-    .countdown div p:nth-child(1){
-        font-size: 3rem;
+
+    .flip-display{
+        width: calc(var(--flip-width) * 1.2);
+        font-size: calc(var(--flip-height) * 0.6); 
     }
+    
     .socials{
         bottom: 5em;
     }
+
     .attribution {
         font-size: 1.2rem;
     }
@@ -219,7 +345,7 @@ section{
     }
 }
 
-@media (min-width:160px){
+@media (min-width:1600px){
     .body::after, 
     .hills img{
         width: 1920px;
