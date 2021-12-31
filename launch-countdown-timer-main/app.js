@@ -29,36 +29,37 @@ const countdown = () => {
     timeSeconds = timeSeconds < 00 ? timeSeconds : timeSeconds;
 
     const daysFlip = document.querySelectorAll('[data-group="days"]');
-    const minutesFlip = document.querySelectorAll('[data-group="hours"]');
-    const hoursFlip = document.querySelectorAll('[data-group="minutes"]');
+    const hoursFlip = document.querySelectorAll('[data-group="hours"]');
+    const minutesFlip = document.querySelectorAll('[data-group="minutes"]');
     const secondsFlip = document.querySelectorAll('[data-group="seconds"]');
 
     daysFlip.forEach(elem => {
-        if(timeHours === 00){
-            elem.parentElement.parentElement.classList.add('play');
-        }
+        timeHours == 00
+            ? (elem.parentElement.parentElement.classList.add('play'), elem.parentElement.parentElement.classList.remove('play'))
+            : elem.parentElement.parentElement.classList.remove('play');
+
         elem.innerHTML = timeDays;
     });
 
     hoursFlip.forEach(elem => {
-        if(timeMinutes === 00){
-            elem.parentElement.parentElement.classList.add('play');
-        }
-        elem.innerHTML = timeMinutes;
+        timeMinutes == 00
+            ? elem.parentElement.parentElement.classList.add('play')
+            : elem.parentElement.parentElement.classList.remove('play');
+
+        elem.innerHTML = timeHours;
     });
 
     minutesFlip.forEach(elem => {
-        if(timeSeconds === 00){
-            elem.parentElement.parentElement.classList.add('play');
-        }
-        elem.innerHTML = timeHours;
-    });
+        timeSeconds == 00
+            ? elem.parentElement.parentElement.classList.add('play')
+            : elem.parentElement.parentElement.classList.remove('play');
+        
+        elem.innerHTML = timeMinutes;
+    }); 
 
     secondsFlip.forEach(elem => {
         elem.innerHTML = timeSeconds;
     });
-    // document.querySelectorAll('.flipper-top .flipper-bottom').innerText = timeSeconds;
-    // document.querySelector('.seconds-flip-top-display').innerText = timeSeconds - 1;
 }
 
 setInterval(countdown, 1000);
