@@ -127,4 +127,7 @@ a#cancel:hover{
   body {
     background: url(./images/pattern-background-mobile.svg);
   }
+  main{
+    width: 300px;
+  }
 }

@@ -1,7 +1,7 @@
 /* variables */
 :root{
     --flip-height: 80px;
-    --flip-width: calc(var(--flip-height) * 0.8);
+    --flip-width: calc(var(--flip-height) * 0.9);
     --line-height: calc(var(--flip-height) * 0.5);
     --animation-time: 1s;
     --animation-ease: linear;
@@ -145,6 +145,8 @@ section{
     color: var(--textColor);
     letter-spacing: 1.6px;
     margin-top: 1rem;
+    text-align: center;
+    /* margin-inline: 1em; */
 }
 
 .flip{
