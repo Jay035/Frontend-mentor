@@ -1,0 +1,183 @@
+:root{
+	--dark-magenta: hsl(300, 43%, 22%);
+	--soft-pink: hsl(333, 80%, 67%);
+	--dark-grayish-magenta: hsl(303, 10%, 53%);
+	--light-grayish-magenta: hsl(300, 24%, 96%);
+	--clr-white: hsl(0, 0%, 100%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	font-size: 15px;
+	width: 90%;
+	margin-inline: auto;
+	padding: 2rem 0;
+	line-height: 1.2;
+}
+
+img{
+	border-radius: 50%;
+	width: 40px;
+	vertical-align: middle;
+}
+
+.ratings{
+	text-align: center;
+}
+
+h1{
+	color: var(--dark-magenta);
+	font-size: 2.5rem;
+	line-height: 1;
+	margin: .5em 0.4em;
+}
+
+.ratings p.light{
+	color: var(--dark-grayish-magenta);
+	font-size: 1.1rem;
+}
+
+.rates{
+	color: var(--dark-magenta);
+	font-weight: 800;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: .8em;
+	background: var(--light-grayish-magenta);
+	border-radius: 10px;
+}
+
+.rates span{
+	display: block;
+	margin-bottom: .8em;
+	color: transparent; 
+	text-shadow: 0 0 0 #ec964a;
+}
+
+.testimonials{
+	margin-top: 4em;
+}
+.testimonials > div{
+	background: var(--dark-magenta);
+	margin-bottom: 1em;
+	border-radius: 10px;
+	padding: 1.5rem ;
+	color: var(--clr-white);
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	width: 190px;
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+	line-height: 1.2;
+	letter-spacing: 2px;
+}
+
+p.title{
+	color: #994b84;
+	font-weight: 700;
+}
+
+.attribution {
+   font-size: 16px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+   transition: 0.3s;
+   text-decoration: none;
+}
+
+.attribution a:hover {
+   color: var(--dark-magenta);
+}
+
+@media (min-width: 1000px){
+	main{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100vh;
+		max-width: 1000px;
+	}
+
+	.ratings{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		text-align: left;
+	}
+
+	.ratings h1{
+		margin-left: 0;
+		font-size: 3rem;
+	}
+
+	p.light{
+		font-size: 1.4rem !important;
+	}
+
+	.rates {
+		display: flex;
+		align-items: center;
+	}
+
+	.report-rate{
+		position: relative;
+		left: 2em;
+	}
+
+	.bestTech{
+		position: relative;
+		left: 4em;
+	}
+
+	.rates span{
+		margin: 0;
+	}
+
+	.rates p{
+		font-size: 20px;
+		margin-left: 1em;
+		/* padding-left: 10px; */
+	}
+
+	.testimonials{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+		position: relative;
+	}
+
+	.testimonials div.second{
+		position: relative;
+		top: 2em;
+	}
+
+	.testimonials div.third{
+		position: relative;
+		top: 4em;
+	}
+
+	.container{
+		width: 200px;
+	}
+
+	.attribution{
+		margin-top: 5em;
+		font-size: 25px;
+	}
+
+	.attribution a{
+		font-size: 28px;
+	}
+}
