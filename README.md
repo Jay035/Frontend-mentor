@@ -3,9 +3,6 @@ Contains all tasks from frontendmentor.io
 
 # LIVE LINKS
 
-sunnyside-agency-landing-page-main
-https://jay035.github.io/sunnyside-agency-landing-page-main/docs/
-
 Order-Summary-Component
 https://jay035.github.io/Order-Summary-Component/
 
