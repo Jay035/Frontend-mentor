@@ -6,7 +6,7 @@ window.addEventListener("load", function(){
 
 const countdown = () => {
     // launch time 
-    const endDate = new Date("Mar 31, 2022 00:00:00").getTime();
+    const endDate = new Date("Mar 31, 2052 00:00:00").getTime();
     // present date 
     const now = new Date().getTime();
     const diff = endDate - now;
